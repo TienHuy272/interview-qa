@@ -21,8 +21,6 @@ public class PredicateExample {
     }
 
     public static Predicate<String> startWithX(String x) {
-        Predicate<String> startWithX;
-        startWithX = item -> item.startsWith(x);
-        return startWithX;
+        return item -> item.startsWith(x);
     }
 }
