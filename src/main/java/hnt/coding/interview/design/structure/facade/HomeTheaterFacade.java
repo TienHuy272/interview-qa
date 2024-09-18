@@ -5,10 +5,14 @@ public class HomeTheaterFacade {
     private Projector projector;
     private SoundSystem soundSystem;
 
-    public HomeTheaterFacade(DVDPlayer dvdPlayer, Projector projector, SoundSystem soundSystem) {
-        this.dvdPlayer = dvdPlayer;
-        this.projector = projector;
-        this.soundSystem = soundSystem;
+    public HomeTheaterFacade() {
+        this.dvdPlayer = new DVDPlayer();
+        this.projector = new Projector();
+        this.soundSystem = new SoundSystem();
+    }
+
+    public static HomeTheaterFacade getInstance() {
+        return new HomeTheaterFacade();
     }
 
     public void watchMovie(String movie) {
