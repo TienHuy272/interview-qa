@@ -1,4 +1,4 @@
-package hnt.coding.interview.design.structure.adapter.handon;
+package hnt.coding.interview.design.structure.adapter;
 
 public class TurkeyAdapter implements Duck {
     Turkey turkey;

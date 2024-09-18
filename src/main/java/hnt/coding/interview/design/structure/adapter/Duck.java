@@ -1,4 +1,4 @@
-package hnt.coding.interview.design.structure.adapter.handon;
+package hnt.coding.interview.design.structure.adapter;
 
 public interface Duck {
     void quark();

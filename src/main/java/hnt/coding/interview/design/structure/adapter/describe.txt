@@ -6,3 +6,5 @@ Turkey
     wildTurkey (gobble(), fly())
 
 Create Adapter : TurkeyAdapter
+adapter make Turkey like a Duck by wrapper turkey
+
