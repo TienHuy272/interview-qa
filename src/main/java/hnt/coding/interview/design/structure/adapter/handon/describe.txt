@@ -1,0 +1,8 @@
+U have two interfaces need to work together
+Duck
+    mallardDuck (quack() , fly())
+
+Turkey
+    wildTurkey (gobble(), fly())
+
+Create Adapter : TurkeyAdapter
