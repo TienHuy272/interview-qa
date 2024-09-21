@@ -14,7 +14,6 @@ public class PredicateExample {
                 Arrays.asList("Brian", "Jackie", "John", "Mike", "Sara");
 
         Predicate<String> startWithN = startWithX("S");
-
         final Function<String, Predicate<String>> startWithLetter =
                 (String letter) -> (String name) -> name.startsWith(letter);
 
