@@ -18,6 +18,7 @@ public class PickFruitTask extends RecursiveTask<Integer> {
     }
 
     protected Integer doCompute() {
+        System.out.println("startInclusive : " + startInclusive + " endExclusive : " + endExclusive);
         return IntStream.rangeClosed(startInclusive, endExclusive)
                 .map(i -> appleTrees[i].pickApples())
                 .sum();
