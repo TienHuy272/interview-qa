@@ -3,6 +3,7 @@ package hnt.coding.interview.concurrency.ex1;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 @Getter
@@ -33,5 +34,19 @@ public class AppleTree {
             e.printStackTrace();
         }
         return numberOfApple;
+    }
+
+    public int pickApples() {
+        return pickApples(toLabel(Thread.currentThread().getName()));
+    }
+
+    private String toLabel(String threadName) {
+        HashMap<String, String> threadNameToLabel = new HashMap<>();
+        threadNameToLabel.put("ForkJoinPool-1-worker-1", "Alice");
+        threadNameToLabel.put("ForkJoinPool-1-worker-2", "Bob");
+        threadNameToLabel.put("ForkJoinPool-1-worker-3", "Carol");
+        threadNameToLabel.put("ForkJoinPool-1-worker-4", "Dan");
+
+        return threadNameToLabel.getOrDefault(threadName, threadName);
     }
 }
