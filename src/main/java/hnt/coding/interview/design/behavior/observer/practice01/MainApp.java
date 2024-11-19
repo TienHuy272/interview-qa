@@ -14,5 +14,8 @@ public class MainApp {
 
         appData.setUpdatedField("version1");
 
+        appData.setUpdatedField("version2");
+
+
     }
 }

@@ -11,5 +11,6 @@ public class PaymentContext {
     // Use the strategy to pay the specified amount
     public void payAmount(double amount) {
         paymentStrategy.pay(amount);
+      
     }
 }
