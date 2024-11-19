@@ -39,10 +39,13 @@ public class OperationMail {
 
         Predicate<String> findHuy = findUserName("Huy");
         System.out.println(findHuy.test("Huy"));
+
+
     }
 
     public static Predicate<String> findUserName(String username) {
         return input -> input.equals(username);
     }
+
 
 }
