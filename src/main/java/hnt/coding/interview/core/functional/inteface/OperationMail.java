@@ -30,5 +30,19 @@ public class OperationMail {
         Function<String, Integer> function = (y) -> y.length();
         System.out.println(function.apply("123"));
 
+
+        Operator operator = new Operator();
+        operator.setAge(10);
+        operator.setName("Huy");
+        FindUser findUser = (item, name) -> operator.getName().equals(name);
+        System.out.println(findUser.isUserName(operator, "Huy"));
+
+        Predicate<String> findHuy = findUserName("Huy");
+        System.out.println(findHuy.test("Huy"));
     }
+
+    public static Predicate<String> findUserName(String username) {
+        return input -> input.equals(username);
+    }
+
 }
